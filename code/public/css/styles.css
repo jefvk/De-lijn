@@ -3,3 +3,16 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+/* ------------------- font -----------------*/
+p{
+    font-size: 1em;
+    line-height: 1.4em;
+    font-weight: normal;
+}
+
+h1{
+    font-size: 2em;
+    line-height: 2.4em;
+    font-weight: bolder;
+}
