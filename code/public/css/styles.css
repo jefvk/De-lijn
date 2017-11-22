@@ -9,10 +9,16 @@ p{
     font-size: 1em;
     line-height: 1.4em;
     font-weight: normal;
+    
+    padding-bottom: 1vh;
+    padding-top: 1vh;
 }
 
 h1{
     font-size: 2em;
     line-height: 2.4em;
     font-weight: bolder;
+    
+    padding-bottom: 1vh;
+    padding-top: 1vh;
 }
