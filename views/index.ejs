@@ -1,0 +1,25 @@
+<% include header %>
+
+<div class="screen">
+  <form>
+    <input type="text" name="Van" placeholder="Van" class="locatievan">
+    <input type="text" name="Naar" placeholder="Naar" class="locatienaar">
+    <div class="uitklap" id="uitklap">
+<input id="vertrek2" type="radio" name="vertrekaankomst" value="Vertrek" checked> Vertrek
+<input id="aankomst2" type="radio" name="vertrekaankomst" value="Aankomst"> Aankomst
+<input type="time" name="tijdstip" id="tijdstip">
+<input type="radio" name="dag" value="Vandaag" checked>Vandaag
+<input type="radio" name="dag" value="Morgen">Morgen
+<input type="radio" name="dag" value="Kalender">Kalender
+</div>
+<div class="tijd" id="tijd">
+ <span class="vertrek" id="vertrek">Vertrek</span>
+ <span class="uur" id="uur">8:30</span>
+ <span class="dag" id="dag">Vandaag</span>
+ </div>
+ <input type="submit" class="submit" value="ZOEKEN">
+  </form>
+  <div class="bevestigen" id="bevestigen"><p>BEVESTIGEN</p></div>
+</div>
+
+<% include footer %>
