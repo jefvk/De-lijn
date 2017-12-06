@@ -277,14 +277,16 @@ input[type=submit]{
 
 #datum{
     position: absolute;
-    top: 32.5vh;
+    top: 8vh;
     z-index: 1000000;
-    left: 0px;
-    border: 1px solid red;
-    width: 80vw;
+    left: 15vw;
+    width: 62vw;
     text-align: center;
     height: 5vh;
-    font-size: 2em;
+    
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-family: sans-serif;
 }
 
 
@@ -306,44 +308,7 @@ input[type=text]{
 
 
 
-.overlaytijd{
-  width:100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background-color: rgba(0,0,0,0.7);
-  z-index: 51;
-  display: none;
-}
-.overlaytijd2{
-  width:100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background-color: rgba(0,0,0,0.7);
-  z-index: 51;
-}
-.overlaydatum{
-  width:100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background-color: rgba(0,0,0,0.7);
-  z-index: 51;
-  display: none;
-}
-.overlaydatum2{
-  width:100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  background-color: rgba(0,0,0,0.7);
-  z-index: 51;
-}
+
 
 
 /* ---------------- map ------------------------*/
