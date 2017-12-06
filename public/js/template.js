@@ -80,3 +80,6 @@ bevestigen.onclick = function() {
    var uur = document.getElementById("tijdstip").value;
    tijdstipinvullen.innerHTML = uur;
 };
+
+
+
