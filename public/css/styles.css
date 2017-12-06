@@ -312,6 +312,31 @@ input[type=text]{
 
 
 
-/* ---------------- map ------------------------*/
+/* ---------------- text ------------------------*/
+.resultaten {
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: white;
+}
+
+.resultaten h1{
+    width: 90vw;
+    text-align: center;
+    
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: bolder;
+    
+    border: 1px solid red;
+    padding-top: 10vh;
+    padding-bottom: 2vh;
+}
+
+.tekst{
+    width: 90vw;
+    margin-left: 5vw;
+}
+
 
 
