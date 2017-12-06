@@ -1,53 +1,8 @@
 <% include header %>
-
-<h1>Bekendste schilderijen</h1>
 <form method="post" action="/">
     <input type="time" name="user[tijd]">
     <input type="text" name="user[van]">
     <input type="text" name="user[naar]">
     <input type="submit" value="Submit">
 </form>
-<div class="streeproze een"></div>
-<div class="streeproze twee"></div>
-<div class="streeproze drie"></div>
-<div class="streeproze vier"></div>
-<div class="streeproze vijf"></div>
-<div class="streeproze zes"></div>
-<div class="streeproze zeven"></div>
-<div class="streeproze acht"></div>
-<div class="streeproze negen"></div>
-<div class="streeproze tien"></div>
-<div class="streepblauw een"></div>
-<div class="streepblauw twee"></div>
-<div class="streepblauw drie"></div>
-<div class="streepblauw vier"></div>
-<div class="streepblauw vijf"></div>
-<div class="streepblauw zes"></div>
-<div class="streepblauw zeven"></div>
-<div class="streepblauw acht"></div>
-<div class="streepblauw negen"></div>
-<div class="streepblauw tien"></div>
-<nav>
-  <% for (var i = 0; i < categorieen.length; i++) { %>
-    <a href="/categorieen/<%- i %>"><%- categorieen[i] %></a>
-  <% } %>
-</nav>
-
-<div class="news">
-  <% var teller = 1; %>
-  <% nieuws.forEach(function(item){ %>
-    <section>
-        <h2>
-        <%- item.titel %>
-        </h2>
-        <img src="/img/<%- item.afbeeldings %>" alt="<%- item.titel %>">
-        <p class="naam"><%- item.naam %></p>
-
-        <p class="samenvatting">
-          <%- item.samenvatting %>
-        </p>
-    </section>
-    <% teller++;}); %>
-</div>
-
 <% include footer %>

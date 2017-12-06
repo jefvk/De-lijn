@@ -1,7 +1,7 @@
 {
-  "name": "mobiel-nieuws-demo",
+  "name": "delijn app",
   "version": "1.0.0",
-  "description": "Mobiele nieuwssite",
+  "description": "Mobiele applicatie",
   "main": "app.js",
   "directories": {
     "test": "test"
@@ -10,13 +10,11 @@
     "start": "node app.js"
   },
   "keywords": [
-    "web",
-    "nieuws",
-    "technology",
-    "node",
-    "express"
+    "routeplanner",
+    "delijn",
+    "app"
   ],
-  "author": "Kristof Michiels",
+  "author": "Monsters&co",
   "license": "ISC",
   "homepage": "",
   "dependencies": {
