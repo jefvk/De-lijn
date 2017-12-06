@@ -1,16 +1,68 @@
 <% include header %>
 
+<div id="map"></div>
+<script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+      var map, infoWindow;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 15,
+          disableDefaultUI: true
+        });
+        infoWindow = new google.maps.InfoWindow;
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+      }
+    
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6HgMRKGA6sMQ9CbWPp2bcwCCcUKB8TO8&callback=initMap">
+    </script>
+
+
+<div id="overlay"></div>
 <div class="screen">
   <form>
     <input type="text" name="Van" placeholder="Van" class="locatievan">
     <input type="text" name="Naar" placeholder="Naar" class="locatienaar">
     <div class="uitklap" id="uitklap">
-<input id="vertrek2" type="radio" name="vertrekaankomst" value="Vertrek" checked> Vertrek
-<input id="aankomst2" type="radio" name="vertrekaankomst" value="Aankomst"> Aankomst
-<input type="time" name="tijdstip" id="tijdstip">
-<input type="radio" name="dag" value="Vandaag" checked>Vandaag
-<input type="radio" name="dag" value="Morgen">Morgen
-<input type="radio" name="dag" value="Kalender">Kalender
+<a class="link2" id="vertrekknop">Vertrek</a>
+<a class="link" id="aankomstknop">Aankomst</a>
+<input type="time" name="tijdstip" id="tijdstip" value='now'>
+<a class="link2" id="vandaag">Vandaag</a>
+<a class="link" id="morgen">Morgen</a>
+<a class="link" id="kalender" data-toggle="active">Kalender</a>
+<input type="date" class="datum" id="datum">
 </div>
 <div class="tijd" id="tijd">
  <span class="vertrek" id="vertrek">Vertrek</span>
