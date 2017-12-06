@@ -45,9 +45,6 @@ body{
     border: none;
 }
 
-
-
-
 .locatienaar{
     width: 70vw;
     height: 6vh;
@@ -97,23 +94,19 @@ body{
 
 ::-webkit-input-placeholder {
     color: white;
-    padding-left: 2vw;
     letter-spacing: 0.5px;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
     color: white;
-    padding-left: 2vw;
     letter-spacing: 0.5px;
 }
 :-ms-input-placeholder { /* IE 10+ */
     color: white;
-    padding-left: 2vw;
     letter-spacing: 0.5px;
 }
 :-moz-placeholder { /* Firefox 18- */
     color: white;
-    padding-left: 2vw;
     letter-spacing: 0.5px;
 }
 
@@ -126,6 +119,8 @@ input[type=submit]{
     position: relative;
     z-index: 1;
 }
+
+
 
 
 #vertrek{
@@ -268,6 +263,8 @@ input[type=submit]{
     height: 20vh;
     margin-left: 12vw;
     margin-top: 30vh;
+    
+    z-index: 9999999999999999;
 }
 
 
@@ -295,6 +292,18 @@ input[type=submit]{
     font-weight: bolder;
     text-align: center;
 }
+
+.locatievan {
+    color: white;
+}
+
+input[type=text]{
+    color: white;
+    padding-left: 5vw;
+}
+
+
+
 
 /* ---------------- map ------------------------*/
 
