@@ -33,7 +33,7 @@ body{
 
 /* ---------------- Locatie van ------------------------*/
 .locatievan{
-    width: 70vw;
+    width: 65vw;
     height: 6vh;
 
     position: fixed;
@@ -46,7 +46,7 @@ body{
 }
 
 .locatienaar{
-    width: 70vw;
+    width: 65vw;
     height: 6vh;
 
     position: fixed;
@@ -273,6 +273,8 @@ input[type=submit]{
 /* ---------------- kalender ------------------------*/
 
 
+
+
 #datum{
     position: absolute;
     top: 32.5vh;
@@ -303,6 +305,45 @@ input[type=text]{
 }
 
 
+
+.overlaytijd{
+  width:100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 51;
+  display: none;
+}
+.overlaytijd2{
+  width:100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 51;
+}
+.overlaydatum{
+  width:100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 51;
+  display: none;
+}
+.overlaydatum2{
+  width:100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 51;
+}
 
 
 /* ---------------- map ------------------------*/

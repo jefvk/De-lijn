@@ -22,7 +22,9 @@ var knopkalender = document.getElementById("kalender");
 var knopvertrek = document.getElementById("vertrekknop");
 var knopaankomst = document.getElementById("aankomstknop");
 var kalender = document.getElementById("datum");
-
+var overlaydatum = document.getElementById('overlaydatum');
+var overlaytijd = document.getElementById('overlaytijd');
+var tijdinput = document.getElementById('tijdstip');
 knopvertrek.onclick = function(){
   vertrek.innerHTML = "Vertrek";
   knopvertrek.className = "link2";
@@ -58,8 +60,20 @@ tijd.onclick = function tonen(){
   uitklap.className = "uitklap2";
   bevestigen.className ="bevestigen2";
 }
+kalender.onclick = function(){
+overlaydatum.className = "overlaydatum2";
+}
+overlaydatum.onclick = function(){
+overlaydatum.className = "overlaydatum";
+}
 
+tijdinput.onclick = function(){
+overlaytijd.className = "overlaytijd2";
+}
 
+overlaytijd.onclick = function(){
+overlaytijd.className = "overlaytijd";
+}
 bevestigen.onclick = function() {
   uitklap.className = "uitklap";
   bevestigen.className ="bevestigen";
