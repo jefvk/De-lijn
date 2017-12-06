@@ -33,7 +33,7 @@ body{
 
 /* ---------------- Locatie van ------------------------*/
 .locatievan{
-    width: 70vw;
+    width: 65vw;
     height: 6vh;
 
     position: fixed;
@@ -45,11 +45,8 @@ body{
     border: none;
 }
 
-
-
-
 .locatienaar{
-    width: 70vw;
+    width: 65vw;
     height: 6vh;
 
     position: fixed;
@@ -97,23 +94,19 @@ body{
 
 ::-webkit-input-placeholder {
     color: white;
-    padding-left: 2vw;
     letter-spacing: 0.5px;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
     color: white;
-    padding-left: 2vw;
     letter-spacing: 0.5px;
 }
 :-ms-input-placeholder { /* IE 10+ */
     color: white;
-    padding-left: 2vw;
     letter-spacing: 0.5px;
 }
 :-moz-placeholder { /* Firefox 18- */
     color: white;
-    padding-left: 2vw;
     letter-spacing: 0.5px;
 }
 
@@ -126,6 +119,8 @@ input[type=submit]{
     position: relative;
     z-index: 1;
 }
+
+
 
 
 #vertrek{
@@ -268,6 +263,8 @@ input[type=submit]{
     height: 20vh;
     margin-left: 12vw;
     margin-top: 30vh;
+    
+    z-index: 9999999999999999;
 }
 
 
@@ -276,16 +273,20 @@ input[type=submit]{
 /* ---------------- kalender ------------------------*/
 
 
+
+
 #datum{
     position: absolute;
-    top: 32.5vh;
+    top: 8vh;
     z-index: 1000000;
-    left: 0px;
-    border: 1px solid red;
-    width: 80vw;
+    left: 15vw;
+    width: 62vw;
     text-align: center;
     height: 5vh;
-    font-size: 2em;
+    
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-family: sans-serif;
 }
 
 
@@ -295,6 +296,20 @@ input[type=submit]{
     font-weight: bolder;
     text-align: center;
 }
+
+.locatievan {
+    color: white;
+}
+
+input[type=text]{
+    color: white;
+    padding-left: 5vw;
+}
+
+
+
+
+
 
 /* ---------------- map ------------------------*/
 

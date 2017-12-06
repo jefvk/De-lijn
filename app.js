@@ -3,8 +3,6 @@ var path = require("path");
 var app = express();
 var request = require("request");
 var bodyParser = require('body-parser');
-var request = require("request");
-
 var getAddress = "https://maps.googleapis.com/maps/api/geocode/json?address=Wiekevorst&key=AIzaSyDMtUsmbGsJnu_99XdMzB3b5h_XPPMEmf4";
 request.get({url:getAddress, json:true}, (err,res,data)=>{
   if (err) {

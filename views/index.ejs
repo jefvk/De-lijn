@@ -50,15 +50,18 @@
     </script>
 
 
+
+
 <div id="overlay"></div>
 <div class="screen">
+
   <form method="post" action="/">
     <input type="text" name="Van" placeholder="Van" class="locatievan">
     <input type="text" name="Naar" placeholder="Naar" class="locatienaar">
     <div class="uitklap" id="uitklap">
 <a class="link2" id="vertrekknop">Vertrek</a>
 <a class="link" id="aankomstknop">Aankomst</a>
-<input type="time" name="tijdstip" id="tijdstip" value='now'>
+<input type="time" name="tijdstip" id="tijdstip">
 <a class="link2" id="vandaag">Vandaag</a>
 <a class="link" id="morgen">Morgen</a>
 <a class="link" id="kalender" data-toggle="active">Kalender</a>
@@ -72,6 +75,8 @@
  <input type="submit" class="submit" value="ZOEKEN">
   </form>
   <div class="bevestigen" id="bevestigen"><p>BEVESTIGEN</p></div>
+    <div id="overlaytijd" class="overlaytijd"></div>
+<div id="overlaydatum" class="overlaydatum"></div>
 </div>
 
 <% include footer %>
