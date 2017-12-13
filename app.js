@@ -73,9 +73,14 @@ app.post('/', function(req, response){
                          console.log(data.reiswegen[0].reiswegStappen[1]);
                          startTijd = data.reiswegen[0].reiswegStappen[1].start;
                          startHalte = data.reiswegen[0].reiswegStappen[1].startLocatie;
+
+                         eindTijd = data.reiswegen[0].reiswegStappen[1].end;
+                         eindHalte = data.reiswegen[0].reiswegStappen[1].aankomstLocatie;
                          response.render("resultaten", {
                            "startTijd": startTijd,
-                           "startHalte": startHalte
+                           "startHalte": startHalte,
+                           "eindTijd": eindTijd,
+                           "eindHalte": eindHalte
                          });
                            }
                          });

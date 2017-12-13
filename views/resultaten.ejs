@@ -1,15 +1,35 @@
 <% include header %>
-<div class="resultaten">
     <div class="tekst">
-        <h1>
-            8u
-        </h1>
-        <p>
-          <%=startTijd%>
-          <%=startHalte%>
-        </p>
-
-    </div>
-</div>
-
-<% include footer %>
+        <p class="title">van<br><span id="vet"><%=startHalte%></span><br>naar<br><span id="vet"><%=eindHalte%></span></p>
+        <ul>
+            <li>
+                <p id="nummer">1</p>
+                <p id="uren"><%=startTijd%> - <%=eindTijd%></p>
+                <p id="naambus"><%=startHalte%> naar <%=eindHalte%></p>
+                <hr id="streep" NOSHADE  size="0.5px">
+            </li>
+            <li>
+                <p id="nummer">1</p>
+                <p id="uren">8:15 - 8:30</p>
+                <p id="naambus">Antwerpen Station</p>
+                <hr id="streep" NOSHADE  size="0.5px">
+            </li>
+            <li>
+                <p id="nummer">1</p>
+                <p id="uren">8:15 - 8:30</p>
+                <p id="naambus">Antwerpen Station</p>
+                <hr id="streep" NOSHADE  size="0.5px">
+            </li>
+            <li>
+                <p id="nummer">1</p>
+                <p id="uren">8:15 - 8:30</p>
+                <p id="naambus">Antwerpen Station</p>
+                <hr id="streep" NOSHADE  size="0.5px">
+            </li>
+            <li>
+                <p id="nummer">1</p>
+                <p id="uren">8:15 - 8:30</p>
+                <p id="naambus">Antwerpen Station</p>
+            </li>
+        </ul>
+        <div class="bevestigen3" id="sluiten"><p>Sluiten</p></div>
