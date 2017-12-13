@@ -350,9 +350,11 @@ li p{
 
 ul{
 
-    position: absolute;
+    position: relative;
     height: 75vh;
-    top: 18vh;
+    margin-top: 8vh;
+    
+    padding-bottom: 10vh;
 }
 
 #nummer{
@@ -413,7 +415,7 @@ ul{
 .bevestigen3{
     width: 100vw;
     height: 7vh;
-    position: absolute;
+    position: fixed;
     z-index: 100;
 
     bottom: 0px;
@@ -453,4 +455,5 @@ ul{
     font-size: 1em;
     letter-spacing: 0.5px;
     padding-top: 8vh;
+    line-height: 1.4em;
 }
