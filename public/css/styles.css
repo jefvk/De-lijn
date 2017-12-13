@@ -28,7 +28,6 @@ body{
     background-color: white;
 }
 
-
 /* ---------------- 1e scherm ------------------------*/
 
 /* ---------------- Locatie van ------------------------*/
@@ -353,7 +352,7 @@ ul{
     position: relative;
     height: 75vh;
     margin-top: 8vh;
-    
+
     padding-bottom: 10vh;
 }
 
