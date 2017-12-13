@@ -324,19 +324,138 @@ input[type=text]{
     width: 90vw;
     text-align: center;
     
-    font-size: 2em;
+    font-size: 1.2em;
     font-family: sans-serif;
     font-weight: bolder;
     
-    border: 1px solid red;
-    padding-top: 10vh;
     padding-bottom: 2vh;
 }
 
 .tekst{
-    width: 90vw;
-    margin-left: 5vw;
+    width: 80vw;
+    margin-left: 10vw;
 }
+
+
+
+li{
+    width: 80vw;
+    clear: both;
+    padding-bottom: 1vh;
+}
+
+li p{
+}
+
+
+ul{
+    
+    position: absolute;
+    height: 75vh;
+    top: 18vh;
+}
+
+#nummer{
+    font-weight: bold;
+    font-family: sans-serif;
+    
+    font-size: 1.2em;
+    
+    text-align: center;
+    
+    padding-bottom: 1vh;
+    
+    
+}
+
+#uren{
+   
+    font-weight: lighter;
+    font-family: sans-serif;
+    
+    font-size: 1em;
+    letter-spacing: 0.3px;
+    
+    text-align: center;
+    
+    padding-bottom: 1vh;
+}
+
+
+
+
+#naambus{
+    font-weight: normal;
+    font-family: sans-serif;
+    
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    
+    clear: both;
+    text-align: center;
+}
+
+#titel{
+    font-size: 2em;
+}
+
+#streep{
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    width: 80vw;
+    margin-left: 0vw;
+    
+    size: 0.5px;
+    opacity: 0.7;
+
+}
+
+.bevestigen3{
+    width: 100vw;
+    height: 7vh;
+    position: absolute;
+    z-index: 100;
+
+    bottom: 0px;
+    left: 0px;
+
+    background-color: #3765da;
+    z-index: 100;
+    display: flex;
+}
+
+.bevestigen3 p{
+    text-align: center;
+    
+    color: white;
+    
+    font-family: sans-serif;
+    
+    display: flex;
+    align-self: center;
+    width: 15vw;
+    margin: 0 auto;
+}
+
+
+#vet{
+    font-weight: bolder;
+    color: #3765da;
+    font-size: 1.2em;
+}
+
+.title{
+    text-align: center;
+    
+    font-weight: normal;
+    font-family: sans-serif;
+    
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    padding-top: 8vh;
+}
+
+
 
 
 
