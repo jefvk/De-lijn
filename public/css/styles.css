@@ -33,7 +33,7 @@ body{
 
 /* ---------------- Locatie van ------------------------*/
 .locatievan{
-    width: 70vw;
+    width: 65vw;
     height: 6vh;
 
     position: fixed;
@@ -46,7 +46,7 @@ body{
 }
 
 .locatienaar{
-    width: 70vw;
+    width: 65vw;
     height: 6vh;
 
     position: fixed;
@@ -263,7 +263,11 @@ input[type=submit]{
     height: 20vh;
     margin-left: 12vw;
     margin-top: 30vh;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> c705a4fbeb458dacff5c1a380330098858e6da71
     z-index: 9999999999999999;
 }
 
@@ -273,16 +277,20 @@ input[type=submit]{
 /* ---------------- kalender ------------------------*/
 
 
+
+
 #datum{
     position: absolute;
-    top: 32.5vh;
+    top: 8vh;
     z-index: 1000000;
-    left: 0px;
-    border: 1px solid red;
-    width: 80vw;
+    left: 15vw;
+    width: 62vw;
     text-align: center;
     height: 5vh;
-    font-size: 2em;
+    
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-family: sans-serif;
 }
 
 
@@ -302,6 +310,41 @@ input[type=text]{
     padding-left: 5vw;
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+/* ---------------- text ------------------------*/
+.resultaten {
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: white;
+}
+
+.resultaten h1{
+    width: 90vw;
+    text-align: center;
+    
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: bolder;
+    
+    border: 1px solid red;
+    padding-top: 10vh;
+    padding-bottom: 2vh;
+}
+
+.tekst{
+    width: 90vw;
+    margin-left: 5vw;
+}
+
+>>>>>>> c705a4fbeb458dacff5c1a380330098858e6da71
 
 
 
