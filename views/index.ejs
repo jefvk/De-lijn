@@ -49,23 +49,31 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6HgMRKGA6sMQ9CbWPp2bcwCCcUKB8TO8&callback=initMap">
     </script>
 
+<div class="vis fadeOut" style="display:block; position:absolute; top:0px; width:100%; height:100%; background-color:#fCCC20;">
+  <img src="/img/startscherm.svg" style="width:100%; height:100%; position:absolute; top:0px; ">
+</div>
 
 
 
 <div id="overlay"></div>
-<div class="screen">
-
-  <form method="post" action="/">
-    <input type="text" name="Van" placeholder="Van" class="locatievan">
-    <input type="text" name="Naar" placeholder="Naar" class="locatienaar">
+<div class="screen invis fadeIn">
+<form method="post" action="/">
+    <input type="text" name="Van" placeholder="Van" class="locatievan" required>
+    <input type="text" name="Naar" placeholder="Naar" class="locatienaar" required>
     <div class="uitklap" id="uitklap">
-<a class="link2" id="vertrekknop">Vertrek</a>
-<a class="link" id="aankomstknop">Aankomst</a>
-<input type="time" name="tijdstip" id="tijdstip">
-<a class="link" id="vandaag">Vandaag</a>
-<a class="link" id="morgen">Morgen</a>
-<a class="link2" id="kalender" name="kalender" data-toggle="active">Kalender</a>
-<input type="date" class="datum" id="datum">
+    <select id="select" name="vertrek">
+        <option value="1">Vertrek</option>
+        <option value="2">Aankomst</option>
+    </select>
+
+<input type="time" name="Tijdstip" id="tijdstip" required>
+<a class="link2" id="kalender" name="kalender" data-toggle="active">Datum</a>
+<div class="datuminvullen">
+  <input id="daginvuller" name="Dag" type="number" required>
+  <input id="maandinvuller"  name="Maand" type="number" required>
+  <input id="jaarinvuller" name="Jaar" type="number" required>
+</div>
+
 </div>
 <div class="tijd" id="tijd">
  <span class="vertrek" id="vertrek">Vertrek</span>
@@ -78,3 +86,5 @@
     <div id="overlaytijd" class="overlaytijd"></div>
 <div id="overlaydatum" class="overlaydatum"></div>
 </div>
+
+<% include footer %>
